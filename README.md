@@ -11,7 +11,7 @@ In the `Demo` section, follow these guidelines:
 - If you want to analyze a single image, provide the path to that image in the `img` variable within the `Image` subsection
 
 ## Proposed approach
-Initially, I isolate the ear from the image ultilizing an ear-landmark prediction model(you can find the Github repository [here](https://github.com/Dryjelly/Face_Ear_Landmark_Detection/tree/main) and my pre-trained model on [ISODS's Hugging Face repo](https://huggingface.co/spaces/isods/AI-Proctoring/tree/main/Tran%20Dinh%20Khoi%20-%20Prohibited%20Behaviors/ear%20landmark%20model)).
+Initially, I isolate the ear from the image ultilizing an ear-landmark prediction model.
 
 Subsequently, the inner and outer regions of the ear are extracted separately from the ear.
 <table align="center">
@@ -36,21 +36,21 @@ Eventually, I compute mean value color of each channel (RGB) for each region and
     </tr> 
     <tr>
         <td align="center"> Inner region(mean value color)</td>
-        <td align="center"> 177.6090479405807</td>
-        <td align="center"> 175.63808237677245</td>
-        <td align="center"> 200.15259959486832</td>
+        <td align="center"> 177.609</td>
+        <td align="center"> 175.638</td>
+        <td align="center"> 200.152</td>
     </tr> 
     <tr>
         <td align="center"> Outer region(mean value color)</td>
-        <td align="center"> 131.74234592445328</td>
-        <td align="center"> 137.2572564612326</td>
-        <td align="center"> 189.7717693836978</td>
+        <td align="center"> 131.742</td>
+        <td align="center"> 137.257</td>
+        <td align="center"> 189.771</td>
     </tr> 
     <tr>
         <td align="center"> Subtracted value</td>
-        <td align="center"> 45.86670201612742</td>
-        <td align="center"> 38.380825915539845</td>
-        <td align="center"> 10.380830211170519</td>
+        <td align="center"> 45.866</td>
+        <td align="center"> 38.381</td>
+        <td align="center"> 10.380</td>
     </tr> 
 </table>
 
